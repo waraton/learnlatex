@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{boxedminipage}
+
+\title{Multicolumn}
+\columnsep=.5in
+\columnseprule = 1mm 
+
+\marginparwidth = 1in
+\marginparsep = 1cm
+\marginparpush = .5cm
+
+\begin{document}
+	\maketitle
+	\section{Intro}
+		Here is how much of TeX's memory you used:
+885 strings out of 476139
+18996 string characters out of 5794455
+1933975 words of memory out of 5000000
+22951 multiletter control sequences out of 15000+600000
+561709 words of font info for 48 fonts, out of 8000000 for 9000
+36 hyphenation exceptions out of 8191
+79i,8n,93p,234b,222s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+		\vspace{2cm}
+	\section{Two coluumn}
+	
+	\lipsum[1-4]
+	\par
+		ano
+	
+	\section{use multcols package}
+	\begin{multicols}{3}
+	\lipsum[1]
+	\end{multicols}
+	
+	\section{MIni pages}
+	
+	\begin{minipage}[t]{.4\linewidth}
+		\subsection{default minipage with footnote}
+		\lipsum[1][1-4]
+		\par 
+			/usr/share/texlive/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty
+			Package\footnote{package for boxed mini pages} boxedminipage 2020/04/19 v1.1 Boxed LaTeX2e minipages
+		\bigskip	
+	\end{minipage}
+	
+	\begin{boxedminipage}[t]{0.5\linewidth}
+		\subsection{minipage relative to linewidth and boxed}
+		\lipsum[1][1-4]	
+	\end{boxedminipage}
+	
+	\section{margin notes}
+		\par
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac,\marginpar{first margin note}
+adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer
+id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus\marginpar{second margin note}
+et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla
+et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer\marginpar{3rd margin note after integer}
+sapien est, iaculis in, pretium quis, viverra ac, nunc.
+	
+\end{document}
