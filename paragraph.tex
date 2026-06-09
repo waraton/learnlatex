@@ -1,0 +1,78 @@
+\documentclass{book}
+
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage[a4paper, margin=1in]{geometry}
+\begin{document}
+	\chapter{paragraphing}
+	\section{paragraph}
+	\par	
+		\lipsum[1][1-4]	
+	\par	 \noindent
+		\lipsum[1][1-5]			
+	\par	 \parindent=1cm
+		\lipsum[1][1-5]		
+	\par	 \parskip 1cm
+		\lipsum[1][2-5]
+	
+	\section{New line}
+	\par \parskip .5cm
+		use double backslashes \\ to break line 1 
+	\par \parskip .5cm
+		use backslash.newline \newline on using the newline
+	\par \parskip .5cm
+		use backslash..linebreak \newline after using the third option
+	\par 
+		usin	g double slashes withl lenthh to break \\[1cm] and create newline
+		
+	\section{visual text formatting}
+		\textbf{bold text}\\
+		\textit{Italic text}\\
+		\underline{underlined text}\\
+		\emph{Empasized text}\\
+		
+	\subsection{relative font size}
+		\large text is largge, 
+		\footnotesize{footnote sized text}, 
+		\tiny{tiny text}, and 
+		\normalsize normalized text now
+		
+	\subsection{color text}
+	Use the xcolor package\\
+	This \textcolor{blue}{text} is blue..
+	
+	\section{Quotation}
+	`i am sorry', he said.\\
+	``I am under double	quotes", he uttured\\
+	\lipsum[1][1-11]	
+	\begin{quote}
+		\begin{spacing}{2}
+		``If i have seen further, it is by standing on the shoulders of giants."\\
+		\raggedleft
+		-- Isaac Newton
+		\end{spacing}
+	\end{quote}
+	\lipsum[1][1-5]
+	
+	\section{Blank spaces in \LaTeX\ }
+	
+	We have vertical and horizontal spaces.	
+	these categories can be predefined or user defined\\
+	vertical: bigskip |predefined and vskip and vspace |user-defined\\
+	horizontal: quad \textcolor{red}{|\quad|}, qquad \textcolor{red}{|\qquad|}, and , \textcolor{red}{|\,|} or thinspace |predefined and hspace \textcolor{red}{|\hspace{2cm}|} |user-defined
+	
+	\par
+	This paragraph contain a \bigskip big skip between the lines. Lorem ipsum dolor sit amet, consectetuer and vspace of 2cm, \vspace{2cm} adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, finally a vskip of 1.2cm \vskip 1.2cm adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque.
+			
+	\section{vfill and hfill}
+	\par 
+	1.2cm adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque.
+	\vfill
+	1.2cm adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu \hfill neque.
+	\vfill
+	what is \LaTeX\ ? \hfill \textbf{(4 Marks)}
+	\vfill
+	\par 
+	1.2cm adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque.
+\end{document}
