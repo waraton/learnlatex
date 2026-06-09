@@ -1,0 +1,49 @@
+\documentclass{book}
+\title{Title: Text Formatting 1}
+\date{2026-06-08}
+
+% using a package
+\usepackage{lipsum}
+\begin{document}
+	\maketitle % add this line to shw the title page
+	% page numbering
+	\thispagestyle{empty}
+	\setcounter{page}{1}
+	\pagenumbering{alph} % alph, roman, default	
+	
+	\chapter{Intro to Text Formating}
+	\section{Section 1}
+	\section{Section 2}
+	\subsection{subsection 1}
+	\lipsum[1-2]
+	\subsection{subsection 2}
+	\paragraph{First paragraph goes here}
+	\subparagraph{This is a sub parahgraph}
+	\subsection{subsection 3}
+	
+	\chapter{Advanced Text formattin}
+	% To remove the section, chatper numbering, add * before the {}
+	\section{Alignment}
+	\subsection*{left align}
+		\begin{flushleft}
+	 		\lipsum[1]
+		\end{flushleft}
+	\subsection*{right align}
+		\begin{flushright}
+			\lipsum[1]
+		\end{flushright}
+	\subsection{center align}
+		\begin{center}
+			\lipsum[1]			
+		\end{center}
+		
+	% switch alignment
+	\section{Alinment by switch}
+		\centering
+			\lipsum[1]
+			\lipsum[1]
+	\section{Bleading of Switch}
+		\lipsum[1]
+	\section{New alignment}
+			
+\end{document}
