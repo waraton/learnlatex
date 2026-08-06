@@ -1,0 +1,29 @@
+\documentclass[36px]{article}
+\title{Fonts}
+\usepackage{lipsum}
+% \renewcommand{\familydefault}{\sfdefault} % sansserif font family
+% \renewcommand{\familydefault}{\rmdefault} % serif font
+\renewcommand{\familydefault}{\ttdefault} % monospace
+
+\begin{document}
+	\maketitle
+
+	\noindent
+	\section{Rendering default font}
+	\lipsum[1][1-3]
+
+	\section{defined family fonts}
+	\textrm{Serif font}\\
+	\textsf{Sans serif font}\\
+	\texttt{Teletype/monospace font}
+
+	\section{New defined}
+	\rmfamily
+	\lipsum[1]
+
+
+	\section{Normalized to default}
+	\normalfont
+	\lipsum[1]
+
+\end{document}

@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\title{Lists}
+\author{Waran Newton Mono Korsuk}
+
+\renewcommand{\labelenumi}{\alph{enumi}.}
+\usepackage{enumerate}
+
+\newenvironment{Question}
+{\begin{list}
+		{
+			\large\underline{\textbf{QUESTION \arabic{N}:}}
+		}{
+			\usecounter{N}
+			\setlength{\leftmargin}{1cm}
+		}}{\end{list}}
+\newcounter{N}
+\begin{document}
+\tableofcontents
+	\maketitle
+	\section{numbered list}
+	\begin{enumerate}
+		\renewcommand{\labelenumi}{Alt. \arabic{enumi})}
+		\setlength{\itemsep}{.5cm}
+
+		\item Red
+			\begin{enumerate}[{\bf Qt a.}]
+				\item r 255
+				\item g 000
+				\item b 000
+				\item using enumerate package
+			\end{enumerate}
+		\item two
+		\item three
+		\item four
+	\end{enumerate}
+
+	\section{unumbered list}
+	\begin{itemize}
+	\renewcommand*\labelitemii{*}
+	\renewcommand*\labelitemiii{$\infty$}
+		\item what
+		\item when
+		\begin{itemize}
+			\item time
+			\item duration
+			\begin{itemize}
+				\item DUration
+				\item dURation
+			\end{itemize}
+			\item delay
+		\end{itemize}
+		\item where
+		\item who
+		\item why
+		\item whom
+		\item which
+	\end{itemize}
+
+	\section{describtion list}
+	\begin{description}
+		\item[time] interval between two events
+		\item[speed] rate of change of distance. it is a scalar quatity. the vector counterpart of speed is velocity.
+		\item[distance] space between two points
+	\end{description}
+
+	\section{userdefined list}
+		\begin{list}\texttt{•}
+		{
+			\large\underline{\textbf{QUESTION \arabic{N}:}}
+		}{
+			\usecounter{N}
+			\setlength{\leftmargin}{1cm}
+		}
+			\item alu
+			\item second eri
+		\end{list}
+
+	\subsection{using newenv userdefined list}
+		\begin{Question}
+			\item one
+			\item two
+		\end{Question}
+\end{document}

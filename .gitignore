@@ -2,3 +2,7 @@
 *.gz
 *.log
 *.pdf
+*.b*
+*.out
+*.swp
+*.save
