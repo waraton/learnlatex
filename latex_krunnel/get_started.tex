@@ -1,0 +1,204 @@
+\documentclass[14pt]{article}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{enumerate}
+\usepackage{hyperref}
+
+\parindent 0px
+%beamer: presentation
+%exams: quizes
+
+\begin{document}
+
+	\section{Hello \LaTeX Math}
+	Hello this is  not  my first \LaTeX document. % a hard return.
+	
+	A rectangle of sides $(x + 1)$ and $(x + 3)$\\ %soft return with \\
+	The equations that is sol long long polinomial and quadratic equation $A(x) = x^2 + 6x + 3$ gives the area of the rectangle.\\
+	The equations that is sol long long polinomial and quadratic equation ${A(x) = x^2 + 6x + 3}$ gives the area of the rectangle.\\
+	The equations that is sol long long polinomial and quadratic equation $$A(x) = x^2 + 6x + 3$$ gives the area of the rectangle.
+	
+	\section{$$^{\text{sup}}_{\text{sub}}$$scripts}
+	
+	$$2_{1_{2_{3_4}}}$$	
+	
+	$$3^\textbf{HELLO superscript}$$
+	
+	\section{Trig functions}
+	
+	\[\sin x\]
+	$$\tan45^0=1$$
+	$$\arcsin\beta$$
+	$$\cos(2n\pi t/T)$$
+	
+	\section{Logarithmic}
+	
+	$$\ln e$$
+	$$\log100 = 2$$
+	$$\log_a a^k = k$$
+	
+	\section{Roots}
+	
+	$$\sqrt[x]{y}$$
+	$$\sqrt{a^2+b^2}=c$$
+	
+	\section{Fractions}
+	$$x_1,x_2=\frac{-b+\sqrt{b^2-4ac}}{2a}$$
+	
+	About $\frac12$ of the glass is full	
+		
+	about $\displaystyle\frac12$ of the glass is empty
+			
+	about $\dfrac{1}{2}$ of the glass is not used
+	
+	about $\dfrac{1}{2}$ of the glass is used
+	
+	\section{Bracketting}
+	
+	The distributive property states that $a(b+c) = ab + ac$ for all $a, b, c \in \mathbb{R}$.
+	
+	The equivalent class is $a$ is $[a]$.\\
+	The set $A$ is defined to be $\{1,2,3,4\}$
+	$$f(x)=a_0 + \sum^{\infty}_{n=1} \left(
+		a_n\cos\left(\frac{2\pi nt}{T}\right) + 
+		b_n\sin\left(\frac{2\pi nt}{T}\right) 
+	\right)$$
+	
+	Conversion rate as of Sept, 2026: $\text{UGX}4000\approx\$1\text{(USD)}$
+	
+	$$b_n=\frac{2}{T}\int_Tf(x)\sin\frac{2\pi nt}{T}$$
+	$$a_n=\frac{2}{T}\int_Tf(x)\cos\left[\frac{2\pi nt}{T}\right]$$
+	$$b_n=\frac{2}{T}\int_Tf(x)\sin\left\langle\frac{2\pi nt}{T}\right\rangle$$
+	$$\left.\frac{dx}{dy}\right|_{x=5}$$
+	
+	\section{Tabulation}
+	
+	\begin{tabular}{|lc||c|}
+	\hline
+	A & B & X \\
+	\hline
+	0 & 0 & 1 \\
+	0 & 1 & 1 \\
+	1 & 0 & 1 \\
+	1 & 1 & 0 \\
+	\hline
+	
+	\end{tabular}
+	
+	\begin{table}
+		\centering
+		\def \arraystretch{1.5}
+	
+		\begin{tabular}{|c|c|c|}
+		\hline
+			A & B & C \\
+		\hline
+			1 & $\frac{1}{5}$ & 5\\ \hline
+			2 & 4 & 12\\ \hline
+			12 & 12 & $\dfrac{1+\dfrac{2}{3x^2}}{5n!-2}$\\
+		\hline
+		\end{tabular}
+		\caption{A random tabular data}
+	\end{table}
+	
+	\begin{table}
+		\centering		
+		
+		\caption{A relationship between parameter, argument and function}
+		\def \arraystretch{1.25}
+		
+		\begin{tabular}{|l|p{5cm}|}
+		\hline
+		var, fn & Description \\ 
+		\hline
+		$x,f(x)$ & $f(x)$ is the reusable piece of math/code that accepts uses the parameter $x$. A value that is pass to the function eg in $f(5), 5$ is called the \textbf{argument}.\\
+		\hline
+		
+		\end{tabular}
+	\end{table}
+	
+	\section{Arrays}
+	
+	\begin{align}
+		x^2 + 2x -5 &= 0\quad \text{is a quadratic equation}\\
+		x+5y&=4
+	\end{align}
+	
+	
+	\begin{align*}
+		x^2 + 2x -5 &= 0\quad \text{is a quadratic equation}\\
+		x+5y&=4
+	\end{align*}
+	
+	
+	\begin{align}
+		x^2 + 2x -5 &= 0\quad \text{is a quadratic equation}\\
+		x+5y&=4
+	\end{align}
+	
+	\section{Itemization}
+	
+	\begin{enumerate}
+		\item Ruler
+		\item Pen
+		\item Exam permit
+		\item Calculator
+		\item etc.
+	\end{enumerate}
+	
+	
+	\begin{itemize}
+		\item Ruler
+		\item Pen
+			\begin{itemize}
+				\item[$\times$] Biro pen
+				\item[$\checkmark$] Fountain pen
+				\item[$\times$] Coloured pen
+			\end{itemize}
+		\item Exam permit
+		\item Calculator
+		\item etc.
+	\end{itemize}
+	
+	\begin{enumerate}[A:-]\setcounter{enumii}{5}
+		\item Ruler
+		\item Pen
+			\begin{enumerate}
+				\item Biro pen
+				\item Fountain pen
+				\item Coloured pen
+			\end{enumerate}
+		\item Exam permit
+		\item Calculator
+		\item etc.
+	\end{enumerate}
+	
+	\section{Text formating}
+	
+	This sentence contains \textit{italicized}, \textbf{bold}, \textsc{small caps}, \textsf{serif}, \texttt{monospace}, \textsl{slanted/oblique} text.
+	
+	View my Github page on \texttt{https://github.com/waraton}.
+	
+	Acess this course video at \url{https://youtube.com?q=latex-course-by-Michelle-Krummel-freecodecamp}.	
+	
+	Acess this course video at \href{https://youtube.com?q=latex-course-by-Michelle-Krummel-freecodecamp}{FreeCodeCamp on YouTube}.
+	
+	\subsection{sizes}
+	\begin{small}\end{small}\\
+	\begin{smaller}\end{smaller}\\
+	\begin{tiny}\end{tiny}\\
+	\begin{big}\end{small}\\
+	\begin{small}\end{small}\\
+	\begin{small}\end{small}\\
+	\begin{small}\end{small}\\
+	\begin{small}\end{small}\\
+	\begin{small}\end{small}\\
+	\begin{small}\end{small}\\
+	\begin{small}\end{small}\\
+	\begin{small}\end{small}\\
+	\begin{small}\end{small}\\
+	\begin{small}\end{small}\\
+	\begin{small}\end{small}\\
+	\begin{small}\end{small}\\
+	\begin{small}\end{small}\\
+		
+\end{document}
