@@ -1,0 +1,28 @@
+# --- DEFAULT RULE ---
+# Automatically detect text files and normalize line endings to LF (Linux style) on checkout/commit
+* text=auto eol=lf
+
+# --- BINARY FILES ---
+# Explicitly protect binary files from line-ending or whitespace normalization
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.jar binary
+*.exe binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+
+# --- CUSTOM EXTENSIONS (Optional safety net) ---
+# Ensure scripts and configurations always use LF regardless of OS
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+Makefile text eol=lf
